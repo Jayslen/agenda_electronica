@@ -14,23 +14,40 @@ namespace proyecto_int_capa_de_datos
 {
     public partial class Form1 : Form
     {
+        private int idSelected;
+        private void DisplayData(string query, params SqlParameter[] parameters)
+        {
+            SqlConnection conn = new SqlConnection("Server=JAYSLEN\\MSSQLSERVER01;Database=registers;Trusted_Connection=True;");
+            conn.Open();
+            SqlCommand queryToExecute = new SqlCommand(query, conn);
+
+            if (parameters != null)
+            {
+                queryToExecute.Parameters.AddRange(parameters);
+            }
+
+            SqlDataReader results = queryToExecute.ExecuteReader();
+            DataGrid.Rows.Clear();
+
+
+            //insert values
+            while (results.Read())
+            {
+                DataGrid.Rows.Add(results["id"].ToString(),
+                    results["name"].ToString(),
+                    results["last_name"].ToString(),
+                    results["birthdate"].ToString(),
+                    results["genre"].ToString(),
+                    results["direction"].ToString(),
+                    results["marital_status"].ToString(),
+                    results["phone_number"].ToString());
+            }
+        }
         public Form1()
         {
             InitializeComponent();
             DataGrid.CellClick += DataGrid_CellClick;
-            DisplayData();
-        }
-        private int idSelected;
-        private void DisplayData() {
-            SqlConnection conn = new SqlConnection("Server=JAYSLEN\\MSSQLSERVER01;Database=registers;Trusted_Connection=True;");
-            conn.Open();
-            SqlCommand query = new SqlCommand("SELECT * FROM diary", conn);
-            SqlDataReader results = query.ExecuteReader();
-            while (results.Read())
-            {
-                DataGrid.Rows.Add(results["id"].ToString(), results["name"].ToString(), results["birthdate"].ToString(), results["genre"].ToString(), results["direction"].ToString(), results["marital_status"].ToString(), results["phone_number"].ToString());
-            }
-            conn.Close();
+            DisplayData("SELECT * FROM diary");
         }
 
         private void DataGrid_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -57,8 +74,25 @@ namespace proyecto_int_capa_de_datos
             query.Parameters.AddWithValue("@id", idSelected);
             query.ExecuteNonQuery();
             DataGrid.Rows.Clear();
-            DisplayData();
+            DisplayData("SELECT * FROM diary");
             idSelected = 0;
+        }
+
+        private void Search_btn_Click(object sender, EventArgs e)
+        {
+            string userInput = search_field.Text;
+            if (userInput.Length <= 0)
+            {
+                MessageBox.Show("Escriba un nombre para ejecutar la busqueda");
+                return;
+            }
+            DisplayData("SELECT * FROM diary WHERE name LIKE @name", new SqlParameter("@name", "%" + userInput + "%"));
+        }
+
+        private void refresh_btn_Click(object sender, EventArgs e)
+        {
+            search_field.Text = "";
+            DisplayData("SELECT * FROM diary");
         }
     }
 }

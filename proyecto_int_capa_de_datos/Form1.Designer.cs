@@ -62,7 +62,7 @@
             this.Numero = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.search_field = new System.Windows.Forms.TextBox();
-            this.search_btn = new System.Windows.Forms.Button();
+            this.Search_btn = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -335,8 +335,9 @@
             this.refresh_btn.Name = "refresh_btn";
             this.refresh_btn.Size = new System.Drawing.Size(189, 38);
             this.refresh_btn.TabIndex = 2;
-            this.refresh_btn.Text = "Actualizar";
+            this.refresh_btn.Text = "Refrescar";
             this.refresh_btn.UseVisualStyleBackColor = true;
+            this.refresh_btn.Click += new System.EventHandler(this.refresh_btn_Click);
             // 
             // tableLayoutPanel3
             // 
@@ -435,30 +436,30 @@
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 67.95866F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.04134F));
             this.tableLayoutPanel4.Controls.Add(this.search_field, 0, 0);
-            this.tableLayoutPanel4.Controls.Add(this.search_btn, 1, 0);
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(207, 184);
+            this.tableLayoutPanel4.Controls.Add(this.Search_btn, 1, 0);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(207, 190);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(387, 40);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(387, 27);
             this.tableLayoutPanel4.TabIndex = 4;
             // 
             // search_field
             // 
             this.search_field.Location = new System.Drawing.Point(3, 3);
-            this.search_field.Multiline = true;
             this.search_field.Name = "search_field";
-            this.search_field.Size = new System.Drawing.Size(257, 34);
+            this.search_field.Size = new System.Drawing.Size(257, 20);
             this.search_field.TabIndex = 0;
             // 
-            // search_btn
+            // Search_btn
             // 
-            this.search_btn.Location = new System.Drawing.Point(266, 3);
-            this.search_btn.Name = "search_btn";
-            this.search_btn.Size = new System.Drawing.Size(118, 34);
-            this.search_btn.TabIndex = 1;
-            this.search_btn.Text = "Buscar";
-            this.search_btn.UseVisualStyleBackColor = true;
+            this.Search_btn.Location = new System.Drawing.Point(266, 3);
+            this.Search_btn.Name = "Search_btn";
+            this.Search_btn.Size = new System.Drawing.Size(118, 21);
+            this.Search_btn.TabIndex = 1;
+            this.Search_btn.Text = "Buscar";
+            this.Search_btn.UseVisualStyleBackColor = true;
+            this.Search_btn.Click += new System.EventHandler(this.Search_btn_Click);
             // 
             // Form1
             // 
@@ -519,7 +520,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Numero;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.TextBox search_field;
-        private System.Windows.Forms.Button search_btn;
+        private System.Windows.Forms.Button Search_btn;
     }
 }
 
