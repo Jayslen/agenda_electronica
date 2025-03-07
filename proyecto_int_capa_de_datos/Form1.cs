@@ -45,15 +45,20 @@ namespace proyecto_int_capa_de_datos
         }
         private void RemoveBtn_Click(object sender, EventArgs e)
         {
+
+            if(idSelected == 0)
+            {
+                MessageBox.Show("Seleccione un fila antes de eliminar un registro");
+                return;
+            }
             SqlConnection conn = new SqlConnection("Server=JAYSLEN\\MSSQLSERVER01;Database=registers;Trusted_Connection=True;");
             conn.Open();
             SqlCommand query = new SqlCommand("DELETE FROM diary WHERE id = @id", conn);
             query.Parameters.AddWithValue("@id", idSelected);
             query.ExecuteNonQuery();
-
             DataGrid.Rows.Clear();
-
             DisplayData();
+            idSelected = 0;
         }
     }
 }

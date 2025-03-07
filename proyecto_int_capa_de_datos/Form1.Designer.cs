@@ -46,23 +46,28 @@
             this.genre_field = new System.Windows.Forms.ComboBox();
             this.marital_status_field = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.RemoveBtn = new System.Windows.Forms.Button();
             this.edit_btn = new System.Windows.Forms.Button();
             this.add_btn = new System.Windows.Forms.Button();
-            this.clear_btn = new System.Windows.Forms.Button();
+            this.refresh_btn = new System.Windows.Forms.Button();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.DataGrid = new System.Windows.Forms.DataGridView();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.apellido_field = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nacimiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Sexo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Direccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Estado_civil = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Numero = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.RemoveBtn = new System.Windows.Forms.Button();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.search_field = new System.Windows.Forms.TextBox();
+            this.search_btn = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGrid)).BeginInit();
+            this.tableLayoutPanel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -284,13 +289,24 @@
             this.tableLayoutPanel2.Controls.Add(this.RemoveBtn, 3, 0);
             this.tableLayoutPanel2.Controls.Add(this.edit_btn, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.add_btn, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.clear_btn, 2, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(12, 163);
+            this.tableLayoutPanel2.Controls.Add(this.refresh_btn, 2, 0);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(12, 134);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(783, 44);
             this.tableLayoutPanel2.TabIndex = 2;
+            // 
+            // RemoveBtn
+            // 
+            this.RemoveBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.RemoveBtn.Location = new System.Drawing.Point(588, 3);
+            this.RemoveBtn.Name = "RemoveBtn";
+            this.RemoveBtn.Size = new System.Drawing.Size(192, 38);
+            this.RemoveBtn.TabIndex = 3;
+            this.RemoveBtn.Text = "Eliminar";
+            this.RemoveBtn.UseVisualStyleBackColor = true;
+            this.RemoveBtn.Click += new System.EventHandler(this.RemoveBtn_Click);
             // 
             // edit_btn
             // 
@@ -312,19 +328,20 @@
             this.add_btn.Text = "Insertar";
             this.add_btn.UseVisualStyleBackColor = true;
             // 
-            // clear_btn
+            // refresh_btn
             // 
-            this.clear_btn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.clear_btn.Location = new System.Drawing.Point(393, 3);
-            this.clear_btn.Name = "clear_btn";
-            this.clear_btn.Size = new System.Drawing.Size(189, 38);
-            this.clear_btn.TabIndex = 2;
-            this.clear_btn.Text = "Limpiar";
-            this.clear_btn.UseVisualStyleBackColor = true;
+            this.refresh_btn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.refresh_btn.Location = new System.Drawing.Point(393, 3);
+            this.refresh_btn.Name = "refresh_btn";
+            this.refresh_btn.Size = new System.Drawing.Size(189, 38);
+            this.refresh_btn.TabIndex = 2;
+            this.refresh_btn.Text = "Actualizar";
+            this.refresh_btn.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel3
             // 
-            this.tableLayoutPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.tableLayoutPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel3.ColumnCount = 1;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -333,18 +350,18 @@
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(786, 223);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(786, 221);
             this.tableLayoutPanel3.TabIndex = 3;
             // 
             // DataGrid
             // 
             this.DataGrid.AllowUserToAddRows = false;
             this.DataGrid.AllowUserToDeleteRows = false;
-            this.DataGrid.AllowUserToOrderColumns = true;
             this.DataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DataGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Id,
             this.Nombre,
+            this.apellido_field,
             this.Nacimiento,
             this.Sexo,
             this.Direccion,
@@ -354,7 +371,7 @@
             this.DataGrid.Location = new System.Drawing.Point(3, 3);
             this.DataGrid.Name = "DataGrid";
             this.DataGrid.ReadOnly = true;
-            this.DataGrid.Size = new System.Drawing.Size(780, 217);
+            this.DataGrid.Size = new System.Drawing.Size(780, 215);
             this.DataGrid.TabIndex = 0;
             // 
             // Id
@@ -370,6 +387,12 @@
             this.Nombre.HeaderText = "Nombre";
             this.Nombre.Name = "Nombre";
             this.Nombre.ReadOnly = true;
+            // 
+            // apellido_field
+            // 
+            this.apellido_field.HeaderText = "Apellido";
+            this.apellido_field.Name = "apellido_field";
+            this.apellido_field.ReadOnly = true;
             // 
             // Nacimiento
             // 
@@ -406,16 +429,36 @@
             this.Numero.Name = "Numero";
             this.Numero.ReadOnly = true;
             // 
-            // RemoveBtn
+            // tableLayoutPanel4
             // 
-            this.RemoveBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.RemoveBtn.Location = new System.Drawing.Point(588, 3);
-            this.RemoveBtn.Name = "RemoveBtn";
-            this.RemoveBtn.Size = new System.Drawing.Size(192, 38);
-            this.RemoveBtn.TabIndex = 3;
-            this.RemoveBtn.Text = "Eliminar";
-            this.RemoveBtn.UseVisualStyleBackColor = true;
-            this.RemoveBtn.Click += new System.EventHandler(this.RemoveBtn_Click);
+            this.tableLayoutPanel4.ColumnCount = 2;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 67.95866F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.04134F));
+            this.tableLayoutPanel4.Controls.Add(this.search_field, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.search_btn, 1, 0);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(207, 184);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 1;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(387, 40);
+            this.tableLayoutPanel4.TabIndex = 4;
+            // 
+            // search_field
+            // 
+            this.search_field.Location = new System.Drawing.Point(3, 3);
+            this.search_field.Multiline = true;
+            this.search_field.Name = "search_field";
+            this.search_field.Size = new System.Drawing.Size(257, 34);
+            this.search_field.TabIndex = 0;
+            // 
+            // search_btn
+            // 
+            this.search_btn.Location = new System.Drawing.Point(266, 3);
+            this.search_btn.Name = "search_btn";
+            this.search_btn.Size = new System.Drawing.Size(118, 34);
+            this.search_btn.TabIndex = 1;
+            this.search_btn.Text = "Buscar";
+            this.search_btn.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -423,6 +466,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ClientSize = new System.Drawing.Size(799, 454);
+            this.Controls.Add(this.tableLayoutPanel4);
             this.Controls.Add(this.tableLayoutPanel3);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanel1);
@@ -434,6 +478,8 @@
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DataGrid)).EndInit();
+            this.tableLayoutPanel4.ResumeLayout(false);
+            this.tableLayoutPanel4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -457,19 +503,23 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox marital_status_field;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.Button clear_btn;
+        private System.Windows.Forms.Button refresh_btn;
         private System.Windows.Forms.Button edit_btn;
         private System.Windows.Forms.Button add_btn;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.DataGridView DataGrid;
+        private System.Windows.Forms.Button RemoveBtn;
         private System.Windows.Forms.DataGridViewTextBoxColumn Id;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn apellido_field;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nacimiento;
         private System.Windows.Forms.DataGridViewTextBoxColumn Sexo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Direccion;
         private System.Windows.Forms.DataGridViewTextBoxColumn Estado_civil;
         private System.Windows.Forms.DataGridViewTextBoxColumn Numero;
-        private System.Windows.Forms.Button RemoveBtn;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
+        private System.Windows.Forms.TextBox search_field;
+        private System.Windows.Forms.Button search_btn;
     }
 }
 
