@@ -1,4 +1,4 @@
-# Proyecto introduccion a la capa acceso de datos.
+# Proyecto universitario introduccion a la capa acceso de datos.
 <ul>
   <li><strong>Materia:</strong> Programacion II</li>
   <li><strong>Estudiante</strong>: Jayslen Rojas Serrano</li>
