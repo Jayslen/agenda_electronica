@@ -3,6 +3,7 @@
   <li><strong>Materia:</strong> Programacion II</li>
   <li><strong>Estudiante</strong>: Jayslen Rojas Serrano</li>
   <li><strong>Maestro:</strong> Bismark Montero </li>
+  <li><strong>Cuatrimestre:</strong>2025-C1</li>
   <li><strong>Tecnologias utilizadas:</strong> C#, SQL Server</li>
 </ul>
 
