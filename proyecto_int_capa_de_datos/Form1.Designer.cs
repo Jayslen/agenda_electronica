@@ -29,170 +29,108 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.emailFiedl = new System.Windows.Forms.TextBox();
-            this.phone2_field = new System.Windows.Forms.TextBox();
-            this.phone_field = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.direction_field = new System.Windows.Forms.TextBox();
+            this.lastNameField = new System.Windows.Forms.TextBox();
+            this.directionField = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.name_label = new System.Windows.Forms.Label();
-            this.name_field = new System.Windows.Forms.TextBox();
-            this.date_field = new System.Windows.Forms.DateTimePicker();
-            this.genre_field = new System.Windows.Forms.ComboBox();
-            this.marital_status_field = new System.Windows.Forms.ComboBox();
+            this.nameField = new System.Windows.Forms.TextBox();
+            this.genreField = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.dateField = new System.Windows.Forms.DateTimePicker();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.RemoveBtn = new System.Windows.Forms.Button();
             this.edit_btn = new System.Windows.Forms.Button();
             this.add_btn = new System.Windows.Forms.Button();
-            this.refresh_btn = new System.Windows.Forms.Button();
+            this.Refresh_btn = new System.Windows.Forms.Button();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.DataGrid = new System.Windows.Forms.DataGridView();
-            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.apellido_field = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nacimiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Sexo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Direccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Estado_civil = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Numero = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.search_field = new System.Windows.Forms.TextBox();
             this.Search_btn = new System.Windows.Forms.Button();
+            this.emailField = new System.Windows.Forms.TextBox();
+            this.phone2Field = new System.Windows.Forms.TextBox();
+            this.phoneField = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.maritalStatusField = new System.Windows.Forms.ComboBox();
+            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lastName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.birthdate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.genre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.direction = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.maritalStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phoneNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.number = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGrid)).BeginInit();
             this.tableLayoutPanel4.SuspendLayout();
+            this.tableLayoutPanel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel1.ColumnCount = 4;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.Controls.Add(this.emailFiedl, 3, 3);
-            this.tableLayoutPanel1.Controls.Add(this.phone2_field, 2, 3);
-            this.tableLayoutPanel1.Controls.Add(this.phone_field, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.label7, 3, 2);
-            this.tableLayoutPanel1.Controls.Add(this.label6, 2, 2);
-            this.tableLayoutPanel1.Controls.Add(this.label5, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.label4, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.direction_field, 2, 1);
+            this.tableLayoutPanel1.ColumnCount = 5;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.Controls.Add(this.lastNameField, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.directionField, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.label3, 3, 0);
             this.tableLayoutPanel1.Controls.Add(this.label2, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label1, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.name_label, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.name_field, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.date_field, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.genre_field, 3, 1);
-            this.tableLayoutPanel1.Controls.Add(this.marital_status_field, 0, 3);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(12, -1);
+            this.tableLayoutPanel1.Controls.Add(this.nameField, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.genreField, 3, 1);
+            this.tableLayoutPanel1.Controls.Add(this.label8, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label1, 4, 0);
+            this.tableLayoutPanel1.Controls.Add(this.dateField, 4, 1);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(15, 12);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 4;
+            this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(786, 129);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(777, 83);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
-            // emailFiedl
+            // lastNameField
             // 
-            this.emailFiedl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.emailFiedl.Location = new System.Drawing.Point(591, 102);
-            this.emailFiedl.Multiline = true;
-            this.emailFiedl.Name = "emailFiedl";
-            this.emailFiedl.Size = new System.Drawing.Size(192, 20);
-            this.emailFiedl.TabIndex = 16;
+            this.lastNameField.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lastNameField.Location = new System.Drawing.Point(158, 52);
+            this.lastNameField.Multiline = true;
+            this.lastNameField.Name = "lastNameField";
+            this.lastNameField.Size = new System.Drawing.Size(149, 20);
+            this.lastNameField.TabIndex = 18;
             // 
-            // phone2_field
+            // directionField
             // 
-            this.phone2_field.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.phone2_field.Location = new System.Drawing.Point(395, 102);
-            this.phone2_field.Multiline = true;
-            this.phone2_field.Name = "phone2_field";
-            this.phone2_field.Size = new System.Drawing.Size(190, 20);
-            this.phone2_field.TabIndex = 15;
-            // 
-            // phone_field
-            // 
-            this.phone_field.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.phone_field.Location = new System.Drawing.Point(199, 102);
-            this.phone_field.Multiline = true;
-            this.phone_field.Name = "phone_field";
-            this.phone_field.Size = new System.Drawing.Size(190, 20);
-            this.phone_field.TabIndex = 14;
-            // 
-            // label7
-            // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label7.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(591, 64);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(192, 32);
-            this.label7.TabIndex = 13;
-            this.label7.Text = "Email";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label6
-            // 
-            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label6.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(395, 64);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(190, 32);
-            this.label6.TabIndex = 12;
-            this.label6.Text = "Telefono";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label5
-            // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label5.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(199, 64);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(190, 32);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "Numero celular";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label4
-            // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(3, 64);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(190, 32);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "Estado civil";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // direction_field
-            // 
-            this.direction_field.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.direction_field.Location = new System.Drawing.Point(395, 38);
-            this.direction_field.Multiline = true;
-            this.direction_field.Name = "direction_field";
-            this.direction_field.Size = new System.Drawing.Size(190, 20);
-            this.direction_field.TabIndex = 8;
+            this.directionField.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.directionField.Location = new System.Drawing.Point(313, 52);
+            this.directionField.Multiline = true;
+            this.directionField.Name = "directionField";
+            this.directionField.Size = new System.Drawing.Size(149, 20);
+            this.directionField.TabIndex = 8;
             // 
             // label3
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.label3.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(591, 2);
+            this.label3.Location = new System.Drawing.Point(468, 6);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(192, 28);
+            this.label3.Size = new System.Drawing.Size(149, 28);
             this.label3.TabIndex = 5;
             this.label3.Text = "Genero";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -202,80 +140,76 @@
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.label2.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(395, 2);
+            this.label2.Location = new System.Drawing.Point(313, 6);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(190, 28);
+            this.label2.Size = new System.Drawing.Size(149, 28);
             this.label2.TabIndex = 4;
             this.label2.Text = "Direccion";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(199, 2);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(190, 28);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Nacimiento";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // name_label
             // 
             this.name_label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.name_label.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name_label.Location = new System.Drawing.Point(3, 2);
+            this.name_label.Location = new System.Drawing.Point(3, 6);
             this.name_label.Name = "name_label";
-            this.name_label.Size = new System.Drawing.Size(190, 28);
+            this.name_label.Size = new System.Drawing.Size(149, 28);
             this.name_label.TabIndex = 2;
             this.name_label.Text = "Nombre";
             this.name_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // name_field
+            // nameField
             // 
-            this.name_field.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.name_field.Location = new System.Drawing.Point(3, 38);
-            this.name_field.Multiline = true;
-            this.name_field.Name = "name_field";
-            this.name_field.Size = new System.Drawing.Size(190, 20);
-            this.name_field.TabIndex = 6;
+            this.nameField.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.nameField.Location = new System.Drawing.Point(3, 52);
+            this.nameField.Multiline = true;
+            this.nameField.Name = "nameField";
+            this.nameField.Size = new System.Drawing.Size(149, 20);
+            this.nameField.TabIndex = 6;
             // 
-            // date_field
+            // genreField
             // 
-            this.date_field.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.date_field.Location = new System.Drawing.Point(199, 38);
-            this.date_field.Name = "date_field";
-            this.date_field.Size = new System.Drawing.Size(190, 20);
-            this.date_field.TabIndex = 7;
-            // 
-            // genre_field
-            // 
-            this.genre_field.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.genre_field.FormattingEnabled = true;
-            this.genre_field.Items.AddRange(new object[] {
+            this.genreField.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.genreField.FormattingEnabled = true;
+            this.genreField.Items.AddRange(new object[] {
             "Femenino",
             "Masculino",
             "Otro"});
-            this.genre_field.Location = new System.Drawing.Point(591, 37);
-            this.genre_field.Name = "genre_field";
-            this.genre_field.Size = new System.Drawing.Size(192, 21);
-            this.genre_field.TabIndex = 2;
+            this.genreField.Location = new System.Drawing.Point(468, 51);
+            this.genreField.Name = "genreField";
+            this.genreField.Size = new System.Drawing.Size(149, 21);
+            this.genreField.TabIndex = 2;
             // 
-            // marital_status_field
+            // label8
             // 
-            this.marital_status_field.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.marital_status_field.FormattingEnabled = true;
-            this.marital_status_field.Items.AddRange(new object[] {
-            "Soltero",
-            "Soltera",
-            "Casado",
-            "Casada",
-            "Viuda",
-            "Viudo"});
-            this.marital_status_field.Location = new System.Drawing.Point(3, 102);
-            this.marital_status_field.Name = "marital_status_field";
-            this.marital_status_field.Size = new System.Drawing.Size(190, 21);
-            this.marital_status_field.TabIndex = 10;
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label8.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.label8.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(158, 6);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(149, 28);
+            this.label8.TabIndex = 17;
+            this.label8.Text = "Apellido";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(623, 6);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(151, 28);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Nacimiento";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // dateField
+            // 
+            this.dateField.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.dateField.Location = new System.Drawing.Point(623, 52);
+            this.dateField.Name = "dateField";
+            this.dateField.Size = new System.Drawing.Size(151, 20);
+            this.dateField.TabIndex = 7;
             // 
             // tableLayoutPanel2
             // 
@@ -289,20 +223,20 @@
             this.tableLayoutPanel2.Controls.Add(this.RemoveBtn, 3, 0);
             this.tableLayoutPanel2.Controls.Add(this.edit_btn, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.add_btn, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.refresh_btn, 2, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(12, 134);
+            this.tableLayoutPanel2.Controls.Add(this.Refresh_btn, 2, 0);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(15, 192);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(783, 44);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(777, 48);
             this.tableLayoutPanel2.TabIndex = 2;
             // 
             // RemoveBtn
             // 
             this.RemoveBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.RemoveBtn.Location = new System.Drawing.Point(588, 3);
+            this.RemoveBtn.Location = new System.Drawing.Point(585, 5);
             this.RemoveBtn.Name = "RemoveBtn";
-            this.RemoveBtn.Size = new System.Drawing.Size(192, 38);
+            this.RemoveBtn.Size = new System.Drawing.Size(189, 38);
             this.RemoveBtn.TabIndex = 3;
             this.RemoveBtn.Text = "Eliminar";
             this.RemoveBtn.UseVisualStyleBackColor = true;
@@ -311,33 +245,35 @@
             // edit_btn
             // 
             this.edit_btn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.edit_btn.Location = new System.Drawing.Point(198, 3);
+            this.edit_btn.Location = new System.Drawing.Point(197, 5);
             this.edit_btn.Name = "edit_btn";
-            this.edit_btn.Size = new System.Drawing.Size(189, 38);
+            this.edit_btn.Size = new System.Drawing.Size(188, 38);
             this.edit_btn.TabIndex = 1;
             this.edit_btn.Text = "Editar";
             this.edit_btn.UseVisualStyleBackColor = true;
+            this.edit_btn.Click += new System.EventHandler(this.edit_btn_Click);
             // 
             // add_btn
             // 
             this.add_btn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.add_btn.Location = new System.Drawing.Point(3, 3);
+            this.add_btn.Location = new System.Drawing.Point(3, 5);
             this.add_btn.Name = "add_btn";
-            this.add_btn.Size = new System.Drawing.Size(189, 38);
+            this.add_btn.Size = new System.Drawing.Size(188, 38);
             this.add_btn.TabIndex = 0;
             this.add_btn.Text = "Insertar";
             this.add_btn.UseVisualStyleBackColor = true;
+            this.add_btn.Click += new System.EventHandler(this.add_btn_Click);
             // 
-            // refresh_btn
+            // Refresh_btn
             // 
-            this.refresh_btn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.refresh_btn.Location = new System.Drawing.Point(393, 3);
-            this.refresh_btn.Name = "refresh_btn";
-            this.refresh_btn.Size = new System.Drawing.Size(189, 38);
-            this.refresh_btn.TabIndex = 2;
-            this.refresh_btn.Text = "Refrescar";
-            this.refresh_btn.UseVisualStyleBackColor = true;
-            this.refresh_btn.Click += new System.EventHandler(this.refresh_btn_Click);
+            this.Refresh_btn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.Refresh_btn.Location = new System.Drawing.Point(391, 5);
+            this.Refresh_btn.Name = "Refresh_btn";
+            this.Refresh_btn.Size = new System.Drawing.Size(188, 38);
+            this.Refresh_btn.TabIndex = 2;
+            this.Refresh_btn.Text = "Refrescar";
+            this.Refresh_btn.UseVisualStyleBackColor = true;
+            this.Refresh_btn.Click += new System.EventHandler(this.Refresh_btn_Click);
             // 
             // tableLayoutPanel3
             // 
@@ -347,11 +283,11 @@
             this.tableLayoutPanel3.ColumnCount = 1;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.Controls.Add(this.DataGrid, 0, 0);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(12, 230);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(12, 286);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(786, 221);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(786, 253);
             this.tableLayoutPanel3.TabIndex = 3;
             // 
             // DataGrid
@@ -361,74 +297,21 @@
             this.DataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DataGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Id,
-            this.Nombre,
-            this.apellido_field,
-            this.Nacimiento,
-            this.Sexo,
-            this.Direccion,
-            this.Estado_civil,
-            this.Numero});
+            this.name,
+            this.lastName,
+            this.email,
+            this.birthdate,
+            this.genre,
+            this.direction,
+            this.maritalStatus,
+            this.phoneNumber,
+            this.number});
             this.DataGrid.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DataGrid.Location = new System.Drawing.Point(3, 3);
             this.DataGrid.Name = "DataGrid";
             this.DataGrid.ReadOnly = true;
-            this.DataGrid.Size = new System.Drawing.Size(780, 215);
+            this.DataGrid.Size = new System.Drawing.Size(780, 247);
             this.DataGrid.TabIndex = 0;
-            // 
-            // Id
-            // 
-            this.Id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Id.HeaderText = "Id";
-            this.Id.Name = "Id";
-            this.Id.ReadOnly = true;
-            // 
-            // Nombre
-            // 
-            this.Nombre.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Nombre.HeaderText = "Nombre";
-            this.Nombre.Name = "Nombre";
-            this.Nombre.ReadOnly = true;
-            // 
-            // apellido_field
-            // 
-            this.apellido_field.HeaderText = "Apellido";
-            this.apellido_field.Name = "apellido_field";
-            this.apellido_field.ReadOnly = true;
-            // 
-            // Nacimiento
-            // 
-            this.Nacimiento.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Nacimiento.HeaderText = "Nacimiento";
-            this.Nacimiento.Name = "Nacimiento";
-            this.Nacimiento.ReadOnly = true;
-            // 
-            // Sexo
-            // 
-            this.Sexo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Sexo.HeaderText = "Sexo";
-            this.Sexo.Name = "Sexo";
-            this.Sexo.ReadOnly = true;
-            // 
-            // Direccion
-            // 
-            this.Direccion.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Direccion.HeaderText = "Direccion";
-            this.Direccion.Name = "Direccion";
-            this.Direccion.ReadOnly = true;
-            // 
-            // Estado_civil
-            // 
-            this.Estado_civil.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Estado_civil.HeaderText = "Estado_civil";
-            this.Estado_civil.Name = "Estado_civil";
-            this.Estado_civil.ReadOnly = true;
-            // 
-            // Numero
-            // 
-            this.Numero.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Numero.HeaderText = "Numero de telefono";
-            this.Numero.Name = "Numero";
-            this.Numero.ReadOnly = true;
             // 
             // tableLayoutPanel4
             // 
@@ -437,7 +320,7 @@
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.04134F));
             this.tableLayoutPanel4.Controls.Add(this.search_field, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.Search_btn, 1, 0);
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(207, 190);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(15, 246);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -461,12 +344,194 @@
             this.Search_btn.UseVisualStyleBackColor = true;
             this.Search_btn.Click += new System.EventHandler(this.Search_btn_Click);
             // 
+            // emailField
+            // 
+            this.emailField.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.emailField.Location = new System.Drawing.Point(456, 38);
+            this.emailField.Multiline = true;
+            this.emailField.Name = "emailField";
+            this.emailField.Size = new System.Drawing.Size(145, 20);
+            this.emailField.TabIndex = 24;
+            // 
+            // phone2Field
+            // 
+            this.phone2Field.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.phone2Field.Location = new System.Drawing.Point(305, 38);
+            this.phone2Field.Multiline = true;
+            this.phone2Field.Name = "phone2Field";
+            this.phone2Field.Size = new System.Drawing.Size(145, 20);
+            this.phone2Field.TabIndex = 23;
+            // 
+            // phoneField
+            // 
+            this.phoneField.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.phoneField.Location = new System.Drawing.Point(154, 38);
+            this.phoneField.Multiline = true;
+            this.phoneField.Name = "phoneField";
+            this.phoneField.Size = new System.Drawing.Size(145, 20);
+            this.phoneField.TabIndex = 22;
+            // 
+            // label7
+            // 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label7.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(456, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(145, 32);
+            this.label7.TabIndex = 21;
+            this.label7.Text = "Email";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label6
+            // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label6.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(305, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(145, 32);
+            this.label6.TabIndex = 20;
+            this.label6.Text = "Telefono";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label5
+            // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label5.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(154, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(145, 32);
+            this.label5.TabIndex = 19;
+            this.label5.Text = "Numero celular";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label4
+            // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label4.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(3, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(145, 32);
+            this.label4.TabIndex = 17;
+            this.label4.Text = "Estado civil";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // maritalStatusField
+            // 
+            this.maritalStatusField.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.maritalStatusField.FormattingEnabled = true;
+            this.maritalStatusField.Items.AddRange(new object[] {
+            "Soltero",
+            "Soltera",
+            "Casado",
+            "Casada",
+            "Viuda",
+            "Viudo"});
+            this.maritalStatusField.Location = new System.Drawing.Point(3, 38);
+            this.maritalStatusField.Name = "maritalStatusField";
+            this.maritalStatusField.Size = new System.Drawing.Size(145, 21);
+            this.maritalStatusField.TabIndex = 18;
+            // 
+            // tableLayoutPanel5
+            // 
+            this.tableLayoutPanel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel5.ColumnCount = 4;
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel5.Controls.Add(this.label4, 0, 0);
+            this.tableLayoutPanel5.Controls.Add(this.emailField, 3, 1);
+            this.tableLayoutPanel5.Controls.Add(this.maritalStatusField, 0, 1);
+            this.tableLayoutPanel5.Controls.Add(this.phone2Field, 2, 1);
+            this.tableLayoutPanel5.Controls.Add(this.label5, 1, 0);
+            this.tableLayoutPanel5.Controls.Add(this.phoneField, 1, 1);
+            this.tableLayoutPanel5.Controls.Add(this.label6, 2, 0);
+            this.tableLayoutPanel5.Controls.Add(this.label7, 3, 0);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(15, 101);
+            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
+            this.tableLayoutPanel5.RowCount = 2;
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(604, 65);
+            this.tableLayoutPanel5.TabIndex = 25;
+            // 
+            // Id
+            // 
+            this.Id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Id.HeaderText = "Id";
+            this.Id.Name = "Id";
+            this.Id.ReadOnly = true;
+            // 
+            // name
+            // 
+            this.name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.name.HeaderText = "Nombre";
+            this.name.Name = "name";
+            this.name.ReadOnly = true;
+            // 
+            // lastName
+            // 
+            this.lastName.HeaderText = "Apellido";
+            this.lastName.Name = "lastName";
+            this.lastName.ReadOnly = true;
+            // 
+            // email
+            // 
+            this.email.HeaderText = "Correo";
+            this.email.Name = "email";
+            this.email.ReadOnly = true;
+            // 
+            // birthdate
+            // 
+            this.birthdate.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.birthdate.HeaderText = "Nacimiento";
+            this.birthdate.Name = "birthdate";
+            this.birthdate.ReadOnly = true;
+            // 
+            // genre
+            // 
+            this.genre.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.genre.HeaderText = "Sexo";
+            this.genre.Name = "genre";
+            this.genre.ReadOnly = true;
+            // 
+            // direction
+            // 
+            this.direction.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.direction.HeaderText = "Direccion";
+            this.direction.Name = "direction";
+            this.direction.ReadOnly = true;
+            // 
+            // maritalStatus
+            // 
+            this.maritalStatus.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.maritalStatus.HeaderText = "Estado_civil";
+            this.maritalStatus.Name = "maritalStatus";
+            this.maritalStatus.ReadOnly = true;
+            // 
+            // phoneNumber
+            // 
+            this.phoneNumber.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.phoneNumber.HeaderText = "Mobile";
+            this.phoneNumber.Name = "phoneNumber";
+            this.phoneNumber.ReadOnly = true;
+            // 
+            // number
+            // 
+            this.number.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.number.HeaderText = "Telefono";
+            this.number.Name = "number";
+            this.number.ReadOnly = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.ClientSize = new System.Drawing.Size(799, 454);
+            this.ClientSize = new System.Drawing.Size(799, 542);
+            this.Controls.Add(this.tableLayoutPanel5);
             this.Controls.Add(this.tableLayoutPanel4);
             this.Controls.Add(this.tableLayoutPanel3);
             this.Controls.Add(this.tableLayoutPanel2);
@@ -481,6 +546,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.DataGrid)).EndInit();
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
+            this.tableLayoutPanel5.ResumeLayout(false);
+            this.tableLayoutPanel5.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -491,36 +558,41 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox name_field;
-        private System.Windows.Forms.DateTimePicker date_field;
-        private System.Windows.Forms.TextBox direction_field;
-        private System.Windows.Forms.ComboBox genre_field;
-        private System.Windows.Forms.TextBox emailFiedl;
-        private System.Windows.Forms.TextBox phone2_field;
-        private System.Windows.Forms.TextBox phone_field;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox marital_status_field;
+        private System.Windows.Forms.TextBox nameField;
+        private System.Windows.Forms.DateTimePicker dateField;
+        private System.Windows.Forms.TextBox directionField;
+        private System.Windows.Forms.ComboBox genreField;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.Button refresh_btn;
+        private System.Windows.Forms.Button Refresh_btn;
         private System.Windows.Forms.Button edit_btn;
         private System.Windows.Forms.Button add_btn;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.DataGridView DataGrid;
         private System.Windows.Forms.Button RemoveBtn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn apellido_field;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nacimiento;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Sexo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Direccion;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Estado_civil;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Numero;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.TextBox search_field;
         private System.Windows.Forms.Button Search_btn;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox lastNameField;
+        private System.Windows.Forms.TextBox emailField;
+        private System.Windows.Forms.TextBox phone2Field;
+        private System.Windows.Forms.TextBox phoneField;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox maritalStatusField;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lastName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn email;
+        private System.Windows.Forms.DataGridViewTextBoxColumn birthdate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn genre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn direction;
+        private System.Windows.Forms.DataGridViewTextBoxColumn maritalStatus;
+        private System.Windows.Forms.DataGridViewTextBoxColumn phoneNumber;
+        private System.Windows.Forms.DataGridViewTextBoxColumn number;
     }
 }
 
